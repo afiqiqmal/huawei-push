@@ -16,6 +16,14 @@ class HuaweiPushKit
     public function __construct(array $config = [])
     {
         $this->config = $config;
+
+        if (!($config['app_id'] ?? null)) {
+            throw new HuaweiException("Missing Client ID");
+        }
+
+        if (!($config['client_secret'] ?? null)) {
+            throw new HuaweiException("Missing Client Secret");
+        }
     }
 
     public static function make(array $arguments)

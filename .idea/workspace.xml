@@ -14,23 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac520983-9b58-4ae0-be60-d53fbde3d7fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Constant/Endpoint.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exception/HuaweiException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HuaweiPushKit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Structure/Android/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Structure/Android/Notification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Structure/Common/Badge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Structure/Common/Button.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Structure/Common/ClickAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Structure/Common/LightSetting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Structure/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Structure/Notification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Structure/NotificationPayload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Structure/Validation/Extras.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HuaweiPushKit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/HuaweiPushKit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604980264105</updated>
-      <workItem from="1604980265258" duration="27317000" />
+      <workItem from="1604980265258" duration="28535000" />
     </task>
     <servers />
   </component>
