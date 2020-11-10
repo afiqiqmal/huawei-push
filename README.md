@@ -59,14 +59,14 @@ $response = HuaweiPushKit::make([])
                             ->setImage("https://seeklogo.com/images/L/laravel-logo-41EC1D4C3F-seeklogo.com.png")
                     )
                     ->setAndroid(
-                        Config::make()
+                        Config::make() // AndroidConfig
                             ->setUrgency(2)
                             ->setCategory(1)
                             ->setTimeToLive(3360)
                             ->setTags('TrumpIsDown')
                             ->isStaging(true)
                             ->setNotification(
-                                AndroidNotification::make()
+                                AndroidNotification::make() // Notification
                                     ->setClickAction(
                                         ClickAction::make()
                                         ->setType(1)

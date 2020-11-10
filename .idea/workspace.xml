@@ -13,7 +13,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac520983-9b58-4ae0-be60-d53fbde3d7fd" name="Default Changelist" comment="" />
+    <list default="true" id="ac520983-9b58-4ae0-be60-d53fbde3d7fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/RequestTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +134,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604980264105</updated>
-      <workItem from="1604980265258" duration="28771000" />
+      <workItem from="1604980265258" duration="29094000" />
     </task>
     <servers />
   </component>
@@ -173,10 +177,26 @@
       <screen x="1680" y="-152" width="1920" height="1080" />
     </state>
     <state x="2393" y="307" key="ComposerInitDialogKey/0.0.1680.1050/1680.-152.1920.1080@1680.-152.1920.1080" timestamp="1605001248760" />
-    <state x="2743" y="126" key="NewPhpClassDialog" timestamp="1605017670157">
+    <state width="1878" height="300" key="GridCell.Tab.0.bottom" timestamp="1605023447815">
       <screen x="1680" y="-152" width="1920" height="1080" />
     </state>
-    <state x="2743" y="126" key="NewPhpClassDialog/0.0.1680.1050/1680.-152.1920.1080@1680.-152.1920.1080" timestamp="1605017670157" />
+    <state width="1878" height="300" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-152.1920.1080@1680.-152.1920.1080" timestamp="1605023447815" />
+    <state width="1878" height="300" key="GridCell.Tab.0.center" timestamp="1605023447813">
+      <screen x="1680" y="-152" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="300" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-152.1920.1080@1680.-152.1920.1080" timestamp="1605023447813" />
+    <state width="1878" height="300" key="GridCell.Tab.0.left" timestamp="1605023447811">
+      <screen x="1680" y="-152" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="300" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-152.1920.1080@1680.-152.1920.1080" timestamp="1605023447811" />
+    <state width="1878" height="300" key="GridCell.Tab.0.right" timestamp="1605023447814">
+      <screen x="1680" y="-152" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="300" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-152.1920.1080@1680.-152.1920.1080" timestamp="1605023447814" />
+    <state x="2743" y="126" key="NewPhpClassDialog" timestamp="1605023215759">
+      <screen x="1680" y="-152" width="1920" height="1080" />
+    </state>
+    <state x="2743" y="126" key="NewPhpClassDialog/0.0.1680.1050/1680.-152.1920.1080@1680.-152.1920.1080" timestamp="1605023215759" />
     <state x="2463" y="314" key="NewPhpFileDialog" timestamp="1604984415470">
       <screen x="1680" y="-152" width="1920" height="1080" />
     </state>
