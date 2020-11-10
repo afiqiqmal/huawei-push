@@ -1,0 +1,25 @@
+{
+    "name": "afiqiqmal/huawei-push",
+    "description": "Simple Huawei Push in PHP",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "kitetail/zttp": "^0.6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "vlucas/phpdotenv": "^5.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hafiq",
+            "email": "hafiqiqmal93@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Afiqiqmal\\HuaweiPush\\":"src/"
+        }
+    }
+}
