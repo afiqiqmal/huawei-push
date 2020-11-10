@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/afiqiqmal/huawei-push.svg?branch=master)](https://travis-ci.org/afiqiqmal/huawei-push)
+[![Coverage](https://img.shields.io/codecov/c/github/afiqiqmal/huawei-push.svg)](https://codecov.io/gh/afiqiqmal/huawei-push)
 [![Packagist](https://img.shields.io/packagist/dt/afiqiqmal/huawei-push.svg)](https://packagist.org/packages/afiqiqmal/huawei-push)
 [![Packagist](https://img.shields.io/packagist/v/afiqiqmal/huawei-push.svg)](https://packagist.org/packages/afiqiqmal/huawei-push)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/paypalme/mhi9388?locale.x=en_US)
