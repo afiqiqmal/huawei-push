@@ -4,6 +4,7 @@
 namespace Afiqiqmal\HuaweiPush\Structure\Common;
 
 
+use Afiqiqmal\HuaweiPush\Helper\ArrayHelper;
 use Afiqiqmal\HuaweiPush\Structure\Validation\Extras;
 
 class Button implements Extras
@@ -25,7 +26,7 @@ class Button implements Extras
      *
      * @var integer
      */
-    private $action_type;
+    private $action_type = 0;
 
     /**
      * Method of opening a custom app page. The options are as follows:
@@ -120,13 +121,13 @@ class Button implements Extras
     {
         $this->validate();
 
-        return [
+        return ArrayHelper::filter([
             'name' => $this->name,
             'action_type' => $this->action_type,
             'intent_type' => $this->intent_type,
             'intent' => $this->intent,
-            'data' => $this->data,
-        ];
+            'data' => $this->data ? json_encode($this->data) : null,
+        ]);
     }
 
     public function validate()

@@ -4,6 +4,8 @@
 namespace Afiqiqmal\HuaweiPush\Structure;
 
 
+use Afiqiqmal\HuaweiPush\Helper\ArrayHelper;
+
 class NotificationPayload
 {
     /**
@@ -46,9 +48,9 @@ class NotificationPayload
 
     public function toArray()
     {
-        return [
+        return ArrayHelper::filter([
             'validate_only' => $this->validate_only,
             'message' => $this->message->toArray() ?? null
-        ];
+        ]);
     }
 }

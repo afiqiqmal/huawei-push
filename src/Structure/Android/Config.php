@@ -4,6 +4,7 @@
 namespace Afiqiqmal\HuaweiPush\Structure\Android;
 
 
+use Afiqiqmal\HuaweiPush\Helper\ArrayHelper;
 use Afiqiqmal\HuaweiPush\Structure\Validation\Extras;
 
 class Config implements Extras
@@ -176,16 +177,16 @@ class Config implements Extras
 
     public function toArray()
     {
-        return [
+        return ArrayHelper::filter([
             'collapse_key' => $this->collapse_state,
             'urgency' => self::$urgencyName[$this->urgency] ?? null,
             'category' => self::$categoryName[$this->category] ?? null,
             'ttl' => "{$this->timeToLive}s",
             'bi_tag' => $this->tags,
             'fast_app_target' => $this->staging ? 1 : 2,
-            'data' => $this->data,
+            'data' => $this->data ? json_encode($this->data) : null,
             'notification' => $this->notification ? $this->notification->toArray() : null,
-        ];
+        ]);
     }
 
     public function validate()

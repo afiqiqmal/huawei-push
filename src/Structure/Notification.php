@@ -4,6 +4,8 @@
 namespace Afiqiqmal\HuaweiPush\Structure;
 
 
+use Afiqiqmal\HuaweiPush\Helper\ArrayHelper;
+
 class Notification
 {
     /**
@@ -74,10 +76,10 @@ class Notification
     
     public function toArray()
     {
-        return [
+        return ArrayHelper::filter([
             'title' => $this->title,
             'body' => $this->body,
             'image' => $this->image,
-        ];
+        ]);
     }
 }

@@ -4,6 +4,8 @@
 namespace Afiqiqmal\HuaweiPush\Structure;
 
 
+use Afiqiqmal\HuaweiPush\Helper\ArrayHelper;
+
 class Message
 {
     /**
@@ -130,13 +132,13 @@ class Message
 
     public function toArray()
     {
-        return [
-            'data' => $this->data ?? null,
+        return ArrayHelper::filter([
+            'data' => $this->data ? json_encode($this->data) : null,
             'notification' => $this->notification ? $this->notification->toArray() : null,
             'android' => $this->android ? $this->android->toArray() : null,
             'token' => $this->targetDeviceIds,
             'condition' => $this->condition,
             'topic' => $this->topic,
-        ];
+        ]);
     }
 }

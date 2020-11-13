@@ -4,6 +4,7 @@
 namespace Afiqiqmal\HuaweiPush\Structure\Common;
 
 
+use Afiqiqmal\HuaweiPush\Helper\ArrayHelper;
 use Afiqiqmal\HuaweiPush\Structure\Validation\Extras;
 
 class LightSetting implements Extras
@@ -77,11 +78,11 @@ class LightSetting implements Extras
     {
         $this->validate();
 
-        return [
+        return ArrayHelper::filter([
             'color' => $this->color,
             'light_on_duration' => $this->light_on_duration,
             'light_off_duration' => $this->light_off_duration
-        ];
+        ]);
     }
 
     public function validate()

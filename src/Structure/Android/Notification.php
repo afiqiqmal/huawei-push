@@ -4,6 +4,7 @@
 namespace Afiqiqmal\HuaweiPush\Structure\Android;
 
 
+use Afiqiqmal\HuaweiPush\Helper\ArrayHelper;
 use Afiqiqmal\HuaweiPush\Structure\Common\Badge;
 use Afiqiqmal\HuaweiPush\Structure\Common\Button;
 use Afiqiqmal\HuaweiPush\Structure\Common\ClickAction;
@@ -689,7 +690,7 @@ class Notification implements Extras
 
     public function toArray()
     {
-        return [
+        return ArrayHelper::filter([
             'title' => $this->title,
             'body' => $this->body,
             'icon' => $this->icon,
@@ -727,7 +728,7 @@ class Notification implements Extras
             'buttons' => collect($this->buttons)->map(function ($item) {
                 return $item->toArray();
             })->toArray()
-        ];
+        ]);
     }
 
     public function validate()
