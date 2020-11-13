@@ -23,7 +23,7 @@ class Config implements Extras
      *
      * @var int
      */
-    protected $urgency;
+    protected $urgency = 3;
 
     /**
      * Scenario where a high-priority data message is sent. The options are as follows:
@@ -178,13 +178,13 @@ class Config implements Extras
     {
         return [
             'collapse_key' => $this->collapse_state,
-            'urgency' => self::$urgencyName[$this->urgency],
-            'category' => self::$categoryName[$this->category],
+            'urgency' => self::$urgencyName[$this->urgency] ?? null,
+            'category' => self::$categoryName[$this->category] ?? null,
             'ttl' => "{$this->timeToLive}s",
             'bi_tag' => $this->tags,
             'fast_app_target' => $this->staging ? 1 : 2,
             'data' => $this->data,
-            'notification' => $this->notification->toArray(),
+            'notification' => $this->notification ? $this->notification->toArray() : null,
         ];
     }
 

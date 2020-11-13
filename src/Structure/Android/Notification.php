@@ -719,7 +719,7 @@ class Notification implements Extras
             'use_default_vibrate' => $this->use_default_vibrate,
             'use_default_light' => $this->use_default_light,
             'vibrate_config' => $this->vibrate_config,
-            'visibility' => self::$visibilityName[$this->visibility],
+            'visibility' => self::$visibilityName[$this->visibility] ?? null,
             'light_settings' => $this->light_settings ? $this->light_settings->toArray() : null,
             'foreground_show' => $this->foreground_show,
             'profile_id' => $this->profile_id,

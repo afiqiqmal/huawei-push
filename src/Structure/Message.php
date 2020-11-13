@@ -131,10 +131,9 @@ class Message
     public function toArray()
     {
         return [
-            'notification' => $this->notification->toArray() ?? null,
-            'android' => $this->android->toArray() ?? null,
-//            'apns' => $this->apns->toArray() ?? null,
-//            'webpush' => $this->webpush->toArray() ?? null,
+            'data' => $this->data ?? null,
+            'notification' => $this->notification ? $this->notification->toArray() : null,
+            'android' => $this->android ? $this->android->toArray() : null,
             'token' => $this->targetDeviceIds,
             'condition' => $this->condition,
             'topic' => $this->topic,
