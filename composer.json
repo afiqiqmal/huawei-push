@@ -5,7 +5,7 @@
     "require": {
         "php": "^7.2",
         "guzzlehttp/guzzle": "^6.5.5|^7.0.1",
-        "tightenco/collect": "^6.0.0",
+        "tightenco/collect": "^8.0",
         "ext-json": "*"
     },
     "require-dev": {

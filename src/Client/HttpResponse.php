@@ -38,11 +38,6 @@ class HttpResponse
         return $this->response->getStatusCode();
     }
 
-    function effectiveUri()
-    {
-        return $this->transferStats->getEffectiveUri();
-    }
-
     function isSuccess()
     {
         return $this->status() >= 200 && $this->status() < 300;
