@@ -4,10 +4,10 @@
 namespace Afiqiqmal\HuaweiPush;
 
 
+use Afiqiqmal\HuaweiPush\Client\Http;
 use Afiqiqmal\HuaweiPush\Constant\Endpoint;
 use Afiqiqmal\HuaweiPush\Exception\HuaweiException;
 use Afiqiqmal\HuaweiPush\Structure\NotificationPayload;
-use Zttp\Zttp;
 
 class HuaweiPushKit
 {
@@ -33,14 +33,14 @@ class HuaweiPushKit
 
     public function getAccessToken()
     {
-        $response = Zttp::asFormParams()
+        $response = Http::asForm()
             ->post(Endpoint::TOKEN, [
                 'grant_type' => 'client_credentials',
                 'client_id' => $this->config['app_id'],
                 'client_secret' => $this->config['client_secret'],
             ]);
 
-        if (!$response->isOk()) {
+        if (!$response->ok()) {
             throw new HuaweiException($response->json()['error_description'] ?? 'Unknown Error', $response->status());
         }
 
@@ -55,7 +55,7 @@ class HuaweiPushKit
 
     public function push(NotificationPayload $payload)
     {
-        $response = Zttp::asJson()
+        $response = Http::asJson()
             ->withHeaders([
                 'Authorization' => "Bearer {$this->config['access_token']}"
             ])
