@@ -2,3 +2,4 @@
 /vendor/
 /example/
 .phpunit.result.cache
+.idea
