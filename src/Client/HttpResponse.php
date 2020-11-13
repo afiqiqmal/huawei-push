@@ -4,14 +4,8 @@
 namespace Afiqiqmal\HuaweiPush\Client;
 
 
-use Illuminate\Support\Traits\Macroable;
-
 class HttpResponse
 {
-    use Macroable {
-        __call as macroCall;
-    }
-
     function __construct($response)
     {
         $this->response = $response;
@@ -82,14 +76,5 @@ class HttpResponse
     function __toString()
     {
         return $this->body();
-    }
-
-    function __call($method, $args)
-    {
-        if (static::hasMacro($method)) {
-            return $this->macroCall($method, $args);
-        }
-
-        return $this->response->{$method}(...$args);
     }
 }
