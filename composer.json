@@ -3,7 +3,7 @@
     "description": "Simple Huawei Push in PHP",
     "type": "library",
     "require": {
-        "php": "^7.2",
+        "php": "^7.2|^8.0",
         "guzzlehttp/guzzle": "^6.5.5|^7.0.1",
         "tightenco/collect": "^8.0",
         "ext-json": "*"
